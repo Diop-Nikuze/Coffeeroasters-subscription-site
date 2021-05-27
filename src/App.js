@@ -1,9 +1,12 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import Navigation from "./components/pages/links/Navigation";
+import theme from "../src/theme/theme";
+import "@fontsource/barlow/400.css";
+import "@fontsource/fraunces/900.css";
 
 function App() {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <Navigation />
     </ChakraProvider>
   );

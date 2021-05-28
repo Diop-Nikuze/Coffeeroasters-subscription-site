@@ -7,7 +7,9 @@ import bgStep from "../../../images/bg-steps.png";
 const Shipping = () => {
   return (
     <Box w={1200} m="auto" mt={30}>
-      <Box bgSize="cover" h={450} borderRadius="xl" bgImage={bgImage}>
+      <picture>
+        <source media="(max-width: 650px)" srcset={bgImageMobile} />
+        <img src={bgImage} alt="" />
         <Flex
           flexDir="column"
           justifyContent="center"
@@ -20,6 +22,7 @@ const Shipping = () => {
             md: "center",
             lg: "left",
           }}
+          position="absolute"
         >
           <Heading
             fontWeight="900"
@@ -35,7 +38,7 @@ const Shipping = () => {
             delivered fresh to your door.
           </Text>
         </Flex>
-      </Box>
+      </picture>
 
       <SimpleGrid
         columns={3}
@@ -91,4 +94,6 @@ const Shipping = () => {
   );
 };
 
+{
+}
 export default Shipping;

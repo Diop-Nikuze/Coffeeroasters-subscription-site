@@ -6,29 +6,32 @@ import bgStep from "../../../images/bg-steps.png";
 
 const Shipping = () => {
   return (
-    <Box w={1200} m="auto" mt={30}>
-      <picture>
-        <source media="(max-width: 650px)" srcset={bgImageMobile} />
-        <img src={bgImage} alt="" />
+    <Box w={{ base: 400, sm: 400, md: 850, lg: 1200 }} m="auto" mt={30}>
+      <Box bgImage={bgImage} bgSize="cover" h={450} borderRadius="0.5rem">
         <Flex
           flexDir="column"
           justifyContent="center"
           h={450}
+          align={{
+            base: "center",
+            sm: "center",
+            md: "flex-start",
+            lg: "flex-start",
+          }}
           color="#fff"
-          pl={{ base: 5, sm: 5, md: 5, lg: 20 }}
+          pl={{ base: 0, sm: 0, md: 5, lg: 20 }}
           textAlign={{
             base: "center",
             sm: "center",
-            md: "center",
+            md: "left",
             lg: "left",
           }}
-          position="absolute"
         >
           <Heading
             fontWeight="900"
             fontSize={65}
             mb={7}
-            w={{ base: 300, sm: 300, md: 300, lg: 450 }}
+            w={{ base: 300, sm: 300, md: 450, lg: 450 }}
           >
             Create a plan
           </Heading>
@@ -38,23 +41,40 @@ const Shipping = () => {
             delivered fresh to your door.
           </Text>
         </Flex>
-      </picture>
+      </Box>
 
       <SimpleGrid
         columns={3}
         d="flex"
-        justifyContent="space-around"
+        justifyContent={{
+          base: "flex-start",
+          sm: "flex-start",
+          md: "space-around",
+          lg: "space-around",
+        }}
+        alignItems={{
+          base: "center",
+          sm: "center",
+          md: "normal",
+          lg: "normal",
+        }}
+        flexDirection={{ base: "column", sm: "column", md: "row", lg: "row" }}
         mt={90}
         bgImage={bgStep}
-        h="70vh"
+        h={{ base: "137vh ", sm: "137vh  ", md: "70vh", lg: "70vh" }}
         borderRadius="0.5rem"
         color="#fff"
+        textAlign={{ base: "center", sm: "center", md: "left", lg: "left" }}
       >
-        <Box w={300} mt="15vh">
+        <Box w={300} mt={{ base: "2vh", sm: "2vh", md: "15vh", lg: "15vh" }}>
           <Heading color="#fdd6ba" fontSize={70} fontWeight="extrabold">
             01
           </Heading>
-          <Heading fontSize={25} my={30} fontWeight="bold ">
+          <Heading
+            fontSize={25}
+            my={{ base: 5, sm: 5, md: 30, lg: 30 }}
+            fontWeight="bold "
+          >
             Pick your coffee
           </Heading>
           <Text>
@@ -63,11 +83,15 @@ const Shipping = () => {
             coffees in all profiles every month for you to try out.
           </Text>
         </Box>
-        <Box w={300} mt="15vh">
+        <Box w={300} mt={{ base: "2vh", sm: "2vh", md: "15vh", lg: "15vh" }}>
           <Heading color="#fdd6ba" fontSize={70} fontWeight="extrabold">
             02
           </Heading>
-          <Heading fontSize={25} my={30} fontWeight="bold ">
+          <Heading
+            fontSize={25}
+            my={{ base: 5, sm: 5, md: 30, lg: 30 }}
+            fontWeight="bold "
+          >
             Choose the frequency
           </Heading>
           <Text>
@@ -76,11 +100,15 @@ const Shipping = () => {
             commitment through our online portal.
           </Text>
         </Box>
-        <Box w={300} mt="15vh">
+        <Box w={300} mt={{ base: "2vh", sm: "2vh", md: "15vh", lg: "15vh" }}>
           <Heading color="#fdd6ba" fontSize={70} fontWeight="extrabold">
             03
           </Heading>
-          <Heading fontSize={25} my={30} fontWeight="bold ">
+          <Heading
+            fontSize={25}
+            my={{ base: 5, sm: 5, md: 30, lg: 30 }}
+            fontWeight="bold "
+          >
             Receive and enjoy!
           </Heading>
           <Text>

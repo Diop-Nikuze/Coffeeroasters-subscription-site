@@ -8,7 +8,7 @@ import Nav from "../nav/Nav";
 const Navigation = () => {
   return (
     <Router>
-      <Nav />
+      {/* <Nav /> */}
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" component={About} />

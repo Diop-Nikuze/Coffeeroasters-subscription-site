@@ -7,7 +7,7 @@ import bgStep from "../../../images/bg-steps.png";
 const Shipping = () => {
   return (
     <Box
-      w={{ base: 340, sm: 340, md: 750, lg: 1100 }}
+      w={{ base: 300, sm: 300, md: 750, lg: 1100 }}
       m="auto"
       mt={30}
       maxWidth={1100}
@@ -61,17 +61,20 @@ const Shipping = () => {
         flexDirection={{ base: "column", sm: "column", md: "row", lg: "row" }}
         mt={90}
         bgImage={bgStep}
-        h={{ base: "137vh ", sm: "137vh  ", md: "70vh", lg: "70vh" }}
+        h={{ base: "100% ", sm: "100%  ", md: "40vh", lg: "70vh" }}
         borderRadius="0.5rem"
         color="#fff"
         textAlign={{ base: "center", sm: "center", md: "left", lg: "left" }}
       >
-        <Box w={300} mt={{ base: "2vh", sm: "2vh", md: "15vh", lg: "15vh" }}>
+        <Box
+          w={{ base: 300, sm: 300, md: 225, lg: 300 }}
+          mt={{ base: "2vh", sm: "2vh", md: "5vh", lg: "15vh" }}
+        >
           <Heading color="#fdd6ba" fontSize={70} fontWeight="extrabold">
             01
           </Heading>
           <Heading
-            fontSize={25}
+            fontSize={{ base: 25, sm: 25, md: 20, lg: 25 }}
             my={{ base: 5, sm: 5, md: 30, lg: 30 }}
             fontWeight="bold "
           >
@@ -83,12 +86,15 @@ const Shipping = () => {
             coffees in all profiles every month for you to try out.
           </Text>
         </Box>
-        <Box w={300} mt={{ base: "2vh", sm: "2vh", md: "15vh", lg: "15vh" }}>
+        <Box
+          w={{ base: 300, sm: 300, md: 225, lg: 300 }}
+          mt={{ base: "2vh", sm: "2vh", md: "5vh", lg: "15vh" }}
+        >
           <Heading color="#fdd6ba" fontSize={70} fontWeight="extrabold">
             02
           </Heading>
           <Heading
-            fontSize={25}
+            fontSize={{ base: 25, sm: 25, md: 20, lg: 25 }}
             my={{ base: 5, sm: 5, md: 30, lg: 30 }}
             fontWeight="bold "
           >
@@ -100,12 +106,15 @@ const Shipping = () => {
             commitment through our online portal.
           </Text>
         </Box>
-        <Box w={300} mt={{ base: "2vh", sm: "2vh", md: "15vh", lg: "15vh" }}>
+        <Box
+          w={{ base: 300, sm: 300, md: 225, lg: 300 }}
+          mt={{ base: "2vh", sm: "2vh", md: "5vh", lg: "15vh" }}
+        >
           <Heading color="#fdd6ba" fontSize={70} fontWeight="extrabold">
             03
           </Heading>
           <Heading
-            fontSize={25}
+            fontSize={{ base: 25, sm: 25, md: 20, lg: 25 }}
             my={{ base: 5, sm: 5, md: 30, lg: 30 }}
             fontWeight="bold "
           >

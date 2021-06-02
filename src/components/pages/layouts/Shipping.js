@@ -31,11 +31,11 @@ const Shipping = () => {
             fontWeight="900"
             fontSize={65}
             mb={7}
-            w={{ base: 300, sm: 300, md: 450, lg: 450 }}
+            w={{ base: 260, sm: 260, md: 450, lg: 450 }}
           >
             Create a plan
           </Heading>
-          <Text w={{ base: 300, sm: 300, md: 450, lg: 450 }}>
+          <Text w={{ base: 260, sm: 260, md: 450, lg: 450 }}>
             Build a subscription plan that best fits your needs. We offer an
             assortment of the best artisan coffees from around the globe
             delivered fresh to your door.

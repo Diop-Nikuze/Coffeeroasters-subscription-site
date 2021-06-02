@@ -6,26 +6,26 @@ import bgStep from "../../../images/bg-steps.png";
 
 const Shipping = () => {
   return (
-    <Box w={{ base: 400, sm: 400, md: 850, lg: 1200 }} m="auto" mt={30}>
-      <Box bgImage={bgImage} bgSize="cover" h={450} borderRadius="0.5rem">
+    <Box
+      w={{ base: 340, sm: 340, md: 750, lg: 1100 }}
+      m="auto"
+      mt={30}
+      maxWidth={1100}
+    >
+      <Box
+        bgImage={bgImage}
+        bgSize="cover"
+        h={450}
+        borderRadius="0.5rem"
+        bgPosition="center"
+      >
         <Flex
           flexDir="column"
           justifyContent="center"
           h={450}
-          align={{
-            base: "center",
-            sm: "center",
-            md: "flex-start",
-            lg: "flex-start",
-          }}
           color="#fff"
-          pl={{ base: 0, sm: 0, md: 5, lg: 20 }}
-          textAlign={{
-            base: "center",
-            sm: "center",
-            md: "left",
-            lg: "left",
-          }}
+          pl={{ base: 5, sm: 5, md: 20, lg: 20 }}
+          textAlign={{ base: "center", sm: "center", md: "left", lg: "left" }}
         >
           <Heading
             fontWeight="900"
@@ -35,7 +35,7 @@ const Shipping = () => {
           >
             Create a plan
           </Heading>
-          <Text w={{ base: 300, sm: 300, md: 300, lg: 450 }}>
+          <Text w={{ base: 300, sm: 300, md: 450, lg: 450 }}>
             Build a subscription plan that best fits your needs. We offer an
             assortment of the best artisan coffees from around the globe
             delivered fresh to your door.
